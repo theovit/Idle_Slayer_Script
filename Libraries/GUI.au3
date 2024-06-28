@@ -15,12 +15,12 @@
 #include <Inet.au3>
 
 
-Global $bAutoBuyUpgradeState = False, _
+Global $bAutoBuyUpgradeState = True, _
 		$bCraftSoulBonusState = False, _
-		$bSkipBonusStageState = False, _
+		$bSkipBonusStageState = True, _
 		$bCraftRagePillState = False, _
 		$bCirclePortalsState = False, _
-		$bNoLockpickingState = False, _
+		$bNoLockpickingState = True, _
 		$bBiDimensionalState = False, _
 		$bDimensionalState = False, _
 		$bDisableRageState = False, _
@@ -31,7 +31,7 @@ Global $sVersion = "3.3.4"
 Global $iJumpSliderValue = 150, _
 		$iCirclePortalsCount = 7, _
 		$iAutoAscendTimer = 10, _
-		$iCooldownAutoUpgrades = 600000, _
+		$iCooldownAutoUpgrades = 300000, _
 		$iTimerAutoBuy = TimerInit(), _
 		$iTimerAutoAscend = TimerInit(), _
 		$iTimerFocusGame = TimerInit(), _
