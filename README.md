@@ -1,3 +1,10 @@
+# Note:
+This is a revised version of the original script by Devil4angle. A few changes have been made to improve its performance in the early game:
+
+- Boost has been disabled.
+- Auto-buy has been changed from 50 to 10.
+- Auto-buy timer has been changed from 10 minutes to 5 minutes.
+
 # How to make it run?
 
 (Works only with the Steam Version on Windows)
