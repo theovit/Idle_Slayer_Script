@@ -1,8 +1,8 @@
 #NoTrayIcon
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=Resources\Icon.ico
-#AutoIt3Wrapper_Outfile=D:\Idle Macro\idleslayer\Idle Runner_x32.exe
-#AutoIt3Wrapper_Outfile_x64=D:\Idle Macro\idleslayer\Idle Runner_x64.exe
+#AutoIt3Wrapper_Outfile=C:\Users\Jakov\Downloads\Idle_Slayer_Script-3.3.4\Idle Runner_x32.exe
+#AutoIt3Wrapper_Outfile_x64=C:\Users\Jakov\Downloads\Idle_Slayer_Script-3.3.4\Idle Runner_x64.exe
 #AutoIt3Wrapper_Compression=0
 #AutoIt3Wrapper_Compile_Both=y
 #AutoIt3Wrapper_UseX64=y
@@ -69,6 +69,7 @@
 #AutoIt3Wrapper_Run_Stop_OnError=y
 #AutoIt3Wrapper_Run_Au3Stripper=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
+
 #comments-start
  AutoIt Version: 3.3.16.0
  Author: Devil4ngle, Djahnz
@@ -243,7 +244,7 @@ Func Main()
 			; Auto buy upgrades
 			If $bAutoBuyUpgradeState Then
 				If ($iCooldownAutoUpgrades < TimerDiff($iTimerAutoBuy)) Then
-					$iCooldownAutoUpgrades = 600000
+					$iCooldownAutoUpgrades = 300000
 					$iTimerAutoBuy = TimerInit()
 					WinActivate("Idle Slayer")
 					If WinGetTitle("[ACTIVE]") == "Idle Slayer" Then
@@ -654,7 +655,7 @@ Func BuyEquipment()
 			Sleep(200)
 		EndIf
 		;50 buy
-		MouseClick("left", 1100, 636, 5, 0)
+		MouseClick("left", 1050, 636, 5, 0)
 		Local $aLocation
 		While 1
 			;Check if there is any green buy boxes
@@ -842,6 +843,6 @@ Func ShootAndBoost()
 			ControlFocus("Idle Slayer", "", "")
 		EndIf
 		ControlFocus("Idle Slayer", "", "")
-		ControlSend("Idle Slayer", "", "", "{Up}{Right}")
+		ControlSend("Idle Slayer", "", "", "{Up}")
 	WEnd
 EndFunc   ;==>ShootAndBoost
